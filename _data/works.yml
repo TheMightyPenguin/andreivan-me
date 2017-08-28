@@ -2,10 +2,10 @@ clients:
   peptus:
     slug: "peptus"
     title: "Peptus"
-    img: "/img/peptus.jpg"
+    img: "/assets/img/peptus.jpg"
     tools: "PHP, HTML5"
   goya:
     slug: "goya"
     title: "GoyaCorp"
-    img: "/img/goya.jpg"
+    img: "/assets/img/goya.jpg"
     tools: "PHP, HTML5"
