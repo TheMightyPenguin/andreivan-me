@@ -1,0 +1,29 @@
+{% assign work=site.data.works %}
+
+<section class="container-fluid" id="work">
+  <div class="container">
+    <div class="row col-sm-12">
+      <h1 class="site__title">{{ work.lead_title }}</h1>
+    </div>
+    <div class="row mt-4">
+      {% for clients in work.clients %}
+        {% assign client = clients[1] %}
+        <div class="col-sm-6">
+          <a href="{{ client.url }}">
+            <div class="card">
+              <div class="card__image" style="background-image: url({{ client.img | relative_url }});"></div>
+              <div class="card-body">
+                <ul class="list-inline">
+                  <li class="list-inline-item">
+                    <p class="work__category">{{ client.tools }}</p>
+                  </li>
+                </ul>
+                <h4 class="card-title">{{ client.title }}</h4>
+              </div>
+            </div>
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
